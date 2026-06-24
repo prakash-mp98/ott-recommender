@@ -1,6 +1,6 @@
 # OTT Recommender
 
-> Hybrid movie recommender with explainability, diversity control, and cold-start handling — built for OTT platforms.
+> Hybrid movie recommender with explainability, diversity control, and cold-start handling built for OTT platforms.
 
 [![CI](https://github.com/prakash-mp98/ott-recommender/actions/workflows/ci.yml/badge.svg)](https://github.com/prakash-mp98/ott-recommender/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
