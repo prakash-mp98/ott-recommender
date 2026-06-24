@@ -49,9 +49,9 @@ Request
 
 | Model | Role |
 |---|---|
-| **NeuMF (NCF)** | GMF + MLP neural collaborative filtering — main ranker for warm users |
-| **UserBasedCF** | Cosine-similarity CF — powers the explainability social-proof signal |
-| **ContentBasedRecommender** | Genre one-hot + TF-IDF on titles — cold-start and similar-movie lookups |
+| **NeuMF (NCF)** | GMF + MLP neural collaborative filtering, main ranker for warm users |
+| **UserBasedCF** | Cosine-similarity CF for explainability and social-proof signals |
+| **ContentBasedRecommender** | Genre one-hot + TF-IDF on titles, cold-start and similar-movie lookups |
 | **MMR Re-ranker** | Maximal Marginal Relevance diversity post-processing |
 | **Explainer** | Generates per-item reasons from CF + genre overlap + global stats |
 
