@@ -124,13 +124,13 @@ curl "http://localhost:8000/movies?genre=Drama&limit=10"
 
 **Most tutorial recommenders stop at CF or NCF.** This project adds three production-relevant layers:
 
-**1  Explainability**
+**1. Explainability**
 Each recommendation comes with human-readable reasons derived from:
 - Social proof: how many similar users liked it
 - Taste match: genre overlap with the user's watch history
 - Quality: global average rating and review count
 
-**2 Diversity (MMR)**
+**2. Diversity (MMR)**
 Maximal Marginal Relevance re-ranks candidates by:
 ```
 score(i) = λ × relevance(i) − (1−λ) × max_similarity_to_already_selected(i)
@@ -138,7 +138,7 @@ score(i) = λ × relevance(i) − (1−λ) × max_similarity_to_already_selected
 `diversity=0.0` → pure relevance · `diversity=1.0` → maximum variety.
 This directly addresses the filter-bubble problem that Netflix and Prime Video face.
 
-**3  Cold-start tiers**
+**3. Cold-start tiers**
 | User state | Mode |
 |---|---|
 | 0 ratings | Genre preference → content-based |
