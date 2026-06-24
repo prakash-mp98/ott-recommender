@@ -6,13 +6,13 @@
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Standard OTT recommenders rank purely by relevance — this one adds three things that real platforms actually struggle with:
+Standard OTT recommenders rank purely by relevance and this one adds three things that real platforms actually struggle with:
 
 | Problem | This project's solution |
 |---|---|
-| Black-box suggestions users don't trust | **Explainability engine** — human-readable reasons per recommendation |
-| Genre bubble (watch one thriller, see only thrillers forever) | **MMR diversity re-ranking** — tunable balance between relevance and variety |
-| New user with no history | **3-tier cold-start** — genre quiz → content-based → NCF as history builds |
+| Black-box suggestions users don't trust | **Explainability engine** : human-readable reasons per recommendation |
+| Genre bubble (watch one thriller, see only thrillers forever) | **MMR diversity re-ranking** : tunable balance between relevance and variety |
+| New user with no history | **3-tier cold-start** : genre quiz → content-based → NCF as history builds |
 
 Dataset: **MovieLens 100K** (943 users · 1,682 movies · 100,000 ratings)
 
@@ -153,7 +153,7 @@ This directly addresses the filter-bubble problem that Netflix and Prime Video f
 |---|---|
 | Precision@K | Fraction of top-K that are relevant (rating ≥ 4★) |
 | Recall@K | Fraction of all relevant items captured in top-K |
-| NDCG@K | Ranking quality — rewards placing best items first |
+| NDCG@K | Ranking quality -> rewards placing best items first |
 | Intra-list diversity | Average pairwise cosine distance in the recommendation list |
 
 ---
